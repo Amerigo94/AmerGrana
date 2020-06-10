@@ -1,0 +1,22 @@
+public class Contact_Service {
+    public static Contact UpdateContact(Contact InputContact){
+        
+        switch on  InputContact.Account.Name {
+            when 'United Oil & Gas Corp' {
+            	InputContact.AssistantName='David Berg';}
+        
+            when 'United Oil & Gas Corp, Singapore'{
+                InputContact.AssistantName='Adam Brody';}
+        
+            when 'United Oil & Gas Corp,UK'{
+                InputContact.AssistantName='Alan Rickman';}
+              
+            when else{
+                    InputContact.AssistantName='Deborah Davies';
+                }
+        }
+        update inputContact;
+        return inputContact;
+        
+        }
+        }
