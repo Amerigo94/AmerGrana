@@ -6,5 +6,5 @@ public class getAllOpportunities_TEST{
         List rez = Opp.allOppo();
         System.assertEquals(List<Opportunities>,rez);
     }
-zgtu
+
 }
