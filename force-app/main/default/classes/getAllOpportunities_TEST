@@ -1,4 +1,10 @@
 @isTest
 public class getAllOpportunities_TEST{
-    
+    @isTest
+    public static void getAllOpportunities(){
+        getAllOpportunities Opp = new getAllOpportunities();
+        List rez = Opp.allOppo();
+        System.assertEquals(List<Opportunities>,rez);
+    }
+
 }
