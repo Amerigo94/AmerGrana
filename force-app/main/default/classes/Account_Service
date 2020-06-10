@@ -1,0 +1,25 @@
+public class Account_Service{
+    public void updateAccounts(){
+        Account[] allAccounts = [SELECT Id,Type, MarketingValue__c FROM Account];
+        for (Account acct : allAccounts){
+            switch on acct.Type{
+                when 'Prospect' {
+                    acct.MarketingValue__c=30;
+        
+                }
+                when 'Customer - Direct'{
+                    acct.MarketingValue__c=65;
+                }    
+                when 'Customer - Channel'{
+                    acct.MarketingValue__c=100;
+                }
+                when else{
+                    acct.MarketingValue__c=1
+                }
+            }
+        
+        }
+        update allAccounts;
+    }
+
+}
