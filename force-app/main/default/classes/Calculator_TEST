@@ -1,0 +1,26 @@
+@isTest
+public class Calculator_TEST{
+    @isTest
+    public static void sum(){
+        Calculator sabiranje= new Calculator(1,1);
+        Integer rez=sabiranje.sum();
+        System.assertEquals(2, rez);
+    }
+    @isTest
+    public static void Multiplication(){
+        Calculator mnozenje= new Calculator(2,3);
+        Integer rez=mnozenje.Multiplication();
+        System.assertEquals(6, rez);
+    }
+     @isTest
+    public static void Substraction(){
+        Calculator Oduzimanje= new Calculator(2,3);
+        Integer rez=Oduzimanje.Substraction();
+        System.assertEquals(1, rez);
+    }
+      @isTest
+    public static void divide(){
+        Calculator Dijeljenje= new Calculator(2,3);
+        Double rez=Dijeljenje.divide();
+        System.assertEquals(1, rez);
+}
