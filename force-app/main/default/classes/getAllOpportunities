@@ -1,0 +1,7 @@
+public class AllOpportunities {
+    public static List<Opportunities> allOppo {
+      allOppo = [SELECT Name FROM Opportunitiy]}
+
+        	return allOppo;
+    }
+}
